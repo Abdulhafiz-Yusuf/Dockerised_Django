@@ -1,0 +1,319 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "hello_world",
+        "description": "hello_world",
+        "isExtraImport": true,
+        "detail": "hello_world",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = os.environ.get('SECRET_KEY', 'changeme')\nDEBUG = True\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = bool(int(os.environ.get('DEBUG', 0)))\nALLOWED_HOSTS = ['172.18.0.2', '0.0.0.0', '.herokuapp.com']\nALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "SECRET_KEY = os.environ.get('SECRET_KEY', 'changeme')\nDEBUG = True\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = bool(int(os.environ.get('DEBUG', 0)))\nALLOWED_HOSTS = ['172.18.0.2', '0.0.0.0', '.herokuapp.com']\nALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')\nif ALLOWED_HOSTS_ENV:\n    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "DEBUG = True\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = bool(int(os.environ.get('DEBUG', 0)))\nALLOWED_HOSTS = ['172.18.0.2', '0.0.0.0', '.herokuapp.com']\nALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')\nif ALLOWED_HOSTS_ENV:\n    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "DEBUG = bool(int(os.environ.get('DEBUG', 0)))\nALLOWED_HOSTS = ['172.18.0.2', '0.0.0.0', '.herokuapp.com']\nALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')\nif ALLOWED_HOSTS_ENV:\n    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['172.18.0.2', '0.0.0.0', '.herokuapp.com']\nALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')\nif ALLOWED_HOSTS_ENV:\n    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS_ENV",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "ALLOWED_HOSTS_ENV = os.environ.get('ALLOWED_HOSTS')\nif ALLOWED_HOSTS_ENV:\n    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'hello_world'\n]\nMIDDLEWARE = [",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'app.urls'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "ROOT_URLCONF = 'app.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'app.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/2.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\n# Password validation",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "STATIC_URL = '/static/static/'\nMEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "MEDIA_URL = '/static/media/'\nSTATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "STATIC_ROOT = '/vol/web/static'\nMEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "app.app.settings",
+        "description": "app.app.settings",
+        "peekOfCode": "MEDIA_ROOT = '/vol/web/media'",
+        "detail": "app.app.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "app.app.urls",
+        "description": "app.app.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.index),\n]",
+        "detail": "app.app.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "app.app.wsgi",
+        "description": "app.app.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "app.app.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "HelloWorldConfig",
+        "kind": 6,
+        "importPath": "app.hello_world.apps",
+        "description": "app.hello_world.apps",
+        "peekOfCode": "class HelloWorldConfig(AppConfig):\n    name = 'hello_world'",
+        "detail": "app.hello_world.apps",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app.hello_world.views",
+        "description": "app.hello_world.views",
+        "peekOfCode": "def index(request):\n    \"\"\"Placeholder index view\"\"\"\n    return render(request, 'index.html')",
+        "detail": "app.hello_world.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app.manage",
+        "description": "app.manage",
+        "peekOfCode": "def main():\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"\n        ) from exc",
+        "detail": "app.manage",
+        "documentation": {}
+    }
+]
